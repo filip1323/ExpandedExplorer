@@ -92,7 +92,9 @@ public class GUIResponder implements ActionListener, DocumentListener, KeyListen
 	int index;
 	switch (e.getKeyCode()) {
 	    case 27: //esc
-		if (listing.getSelectedIndex() == -1) {
+		if (UI.getUserInput().equals("")) {
+		    System.exit(0);
+		} else if (listing.getSelectedIndex() == -1) {
 		    logic.resetUserInput();
 		} else {
 		    listing.clearSelection();
