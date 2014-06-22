@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="12.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>540</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Main&gt;&gt;
+ExpandedExplorer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>126</x>
+      <y>414</y>
+      <w>378</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>FileHandler
+--
+--
++openFile(path : String) : void
++getMatchingDirectoryListingString(path : String) : String[*]
++getSystemDrivesListingString() : String[*]</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>414</x>
+      <y>846</y>
+      <w>216</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>Listing
+--
++paths : string[1..n]
+--
++addPath(path : String) : void
++addPaths(paths : String[1..n]) : void
++getPaths() : String[1..n]
++getFirst() : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>126</x>
+      <y>585</y>
+      <w>234</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Logic
+--
+--
++openPath(path : String) : void
++updateUserInput(text : String) : void
++resetUserInput() : void
++clearLastNode() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>486</x>
+      <y>630</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+Status
+--
++incorrect_path
++has_nodes
++final_node</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>531</x>
+      <y>414</y>
+      <w>234</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>SoundManager
+--
++forward : String
++backward : String
++wrong : String
++final : String
+--
++playSound(soundname : String) : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>666</x>
+      <y>585</y>
+      <w>432</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>UserInterface
+--
+--
++updateListing(listing : Listing) : void
++updateStatus(status : Status) : void
++updateUserInput(input : String) : void
++updateUserInput(input : String, mode : UserInputUpdateMode) : void
++getUserInput() : String
++getStatus() : Status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>306</x>
+      <y>531</y>
+      <w>161</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;54;27;27;144;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>540</x>
+      <y>531</y>
+      <w>152</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>135;54;135;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>333</x>
+      <y>558</y>
+      <w>350</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;send input
+updates&gt;</panel_attributes>
+    <additional_attributes>27;45;333;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>468</y>
+      <w>44</w>
+      <h>134</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;117</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>684</x>
+      <y>495</y>
+      <w>44</w>
+      <h>107</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>198</x>
+      <y>468</y>
+      <w>44</w>
+      <h>134</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;117;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>720</x>
+      <y>495</y>
+      <w>44</w>
+      <h>107</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;90;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>684</x>
+      <y>837</y>
+      <w>252</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>Graphic User Interface
+--
+--
++initComponents() : void
++changeListing(listing : Listing) : void
++changeStatus(status : Status) : void
++changeUserInput(text : String) : void
++getUserInput() : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>720</x>
+      <y>675</y>
+      <w>44</w>
+      <h>179</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;162</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>684</x>
+      <y>675</y>
+      <w>44</w>
+      <h>179</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;162;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>792</x>
+      <y>414</y>
+      <w>306</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Resources
+--
+--
+_+getAudioStream(name : String) :AudioInputStream_
+_+getStream(name : String) : InputStream_
+_+getUrl(name : String) : URL_</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>126</x>
+      <y>783</y>
+      <w>234</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>FileChecker
+--
+-pathToFile : String
+--
++getPath() : String
++getRoot() : FileChecker
++getNodeName() : String
++isCorrect() boolean
++isDrive() : boolean
++isDir() : boolean
++isFile() : boolean
++pathExists() : boolean
++hasNodes() : boolean
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>198</x>
+      <y>648</y>
+      <w>44</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;135;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>648</y>
+      <w>44</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;135</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>450</x>
+      <y>576</y>
+      <w>44</w>
+      <h>287</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>27;27;27;270</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>297</x>
+      <y>0</y>
+      <w>117</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>ExpandedExplorer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>9</x>
+      <y>90</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>FileHandler</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>333</x>
+      <y>162</y>
+      <w>99</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>Listing</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>153</x>
+      <y>90</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Logic</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>333</x>
+      <y>135</y>
+      <w>99</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>Status</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>585</x>
+      <y>90</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>SoundManager</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>90</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>UserInterface</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>171</x>
+      <y>0</y>
+      <w>153</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;90;144;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>369</x>
+      <y>0</y>
+      <w>135</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>126;90;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>216</x>
+      <y>63</y>
+      <w>251</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>&lt;send input
+updates&gt;</panel_attributes>
+    <additional_attributes>27;45;234;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>72</x>
+      <y>90</y>
+      <w>98</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;27;81;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>513</x>
+      <y>90</y>
+      <w>89</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>72;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>72</x>
+      <y>72</y>
+      <w>90</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>81;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>513</x>
+      <y>72</y>
+      <w>81</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;72;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>450</x>
+      <y>162</y>
+      <w>90</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Prototype&gt;&gt;
+Graphic
+User Interface</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>486</x>
+      <y>99</y>
+      <w>44</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>450</x>
+      <y>99</y>
+      <w>44</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;63;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>297</x>
+      <y>216</y>
+      <w>117</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Resources</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>387</x>
+      <y>99</y>
+      <w>260</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>27;135;243;135;243;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>27</x>
+      <y>99</y>
+      <w>287</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>270;135;27;135;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>153</x>
+      <y>162</y>
+      <w>90</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Protytpe&gt;&gt;
+FileChecker</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>153</x>
+      <y>99</y>
+      <w>44</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;63;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>189</x>
+      <y>99</y>
+      <w>44</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>297</x>
+      <y>81</y>
+      <w>53</w>
+      <h>107</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>27;27;27;90;36;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>297</x>
+      <y>81</y>
+      <w>53</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>27;27;27;63;36;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>801</x>
+      <y>729</y>
+      <w>135</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;ActionListener&gt;&gt;
+&lt;&lt;DocumentListener&gt;&gt;
+&lt;&lt;KeyListener&gt;&gt;
+&lt;&lt;MouseListener&gt;&gt;
+GUI Responder</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>837</x>
+      <y>783</y>
+      <w>44</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>837</x>
+      <y>675</y>
+      <w>44</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;54</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>72</x>
+      <y>432</y>
+      <w>71</w>
+      <h>467</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>54;450;27;450;27;27;54;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>486</x>
+      <y>738</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enum&gt;&gt;
+UserInputUpdateMode
+--
++forward
++backward
++reset</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>333</x>
+      <y>630</y>
+      <w>638</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;</panel_attributes>
+    <additional_attributes>27;27;54;27;54;333;621;333;621;135;603;135</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>873</x>
+      <y>783</y>
+      <w>44</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>27;54;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>450</x>
+      <y>621</y>
+      <w>53</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>27;27;36;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>450</x>
+      <y>729</y>
+      <w>53</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>27;27;36;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>801</x>
+      <y>783</y>
+      <w>44</w>
+      <h>71</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;54;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>738</x>
+      <y>423</y>
+      <w>71</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&gt;.</panel_attributes>
+    <additional_attributes>54;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>909</x>
+      <y>423</y>
+      <w>233</w>
+      <h>485</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>189;27;216;27;216;468;27;468</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>90</x>
+      <y>387</y>
+      <w>1044</w>
+      <h>585</h>
+    </coordinates>
+    <panel_attributes>topcenter:Expanded Explorer Class Dependency
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
