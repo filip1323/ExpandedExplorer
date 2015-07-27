@@ -1,5 +1,8 @@
 # ExpandedExplorer
 
+
+![Preview picture](/preview.jpg?raw=true "Preview picture")
+
 ExpandedExplorer is a simple Java program that allows user to explore directories and open them or run executables in Windows OS.
 It was written to improve skills in Object-Oriented programming, as also to design first, implement later.
 All UML diagrams are saved in ExpandedExplorerBluePrint.png and ExpandedExplorerBluePrint.uxf (UMLet file extension).
