@@ -1,7 +1,7 @@
 # ExpandedExplorer
 
 
-![Preview picture](/preview.jpg?raw=true "Preview picture")
+![Preview picture](/preview.png?raw=true "Preview picture")
 
 ExpandedExplorer is a simple Java program that allows user to explore directories and open them or run executables in Windows OS.
 It was written to improve skills in Object-Oriented programming, as also to design first, implement later.
