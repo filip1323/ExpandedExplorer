@@ -2,7 +2,6 @@
 
 
 ![Preview picture](/preview.png?raw=true "Preview picture")
-
 ExpandedExplorer is a simple Java program that allows user to explore directories and open them or run executables in Windows OS.
 It was written to improve skills in Object-Oriented programming, as also to design first, implement later.
 All UML diagrams are saved in ExpandedExplorerBluePrint.png and ExpandedExplorerBluePrint.uxf (UMLet file extension).
@@ -11,3 +10,6 @@ Main feature is path auto-completion. If there is only one matching file in curr
 
 App uses mgarin/weblaf gui library.
 http://mvnrepository.com/artifact/de.sciss/weblaf/1.27
+
+
+![Preview picture](/ExpandedExplorerBluePrint.png?raw=true "Preview picture")
